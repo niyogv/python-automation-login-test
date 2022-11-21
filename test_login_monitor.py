@@ -49,8 +49,8 @@ class Test_dashboard_market:
     def test_Moibit(self,test_invoke):
         self.driver.find_element(By.XPATH,'//*[@id="root"]/div/nav/p/a/span').click()
         time.sleep(2)
-        self.driver.find_element(By.XPATH,"//input[@placeholder='Username']").send_keys('niyog')
-        self.driver.find_element(By.XPATH,"//input[@placeholder='Password']").send_keys('Niyogjilla@12')
+        self.driver.find_element(By.XPATH,"//input[@placeholder='Username']").send_keys('')
+        self.driver.find_element(By.XPATH,"//input[@placeholder='Password']").send_keys('')
         self.driver.find_element(By.XPATH,"//button[@type='submit']").click()
         time.sleep(10)
         try: # The selenium checks whether the title of page is matching or not if not it throws an assertion error
@@ -65,9 +65,9 @@ class Test_dashboard_market:
     def test_Market(self,test_invoke1):
         self.driver.find_element(By.XPATH,'//div[@class="styles_connect__nsylu styles_menuLink__17kgw"]').click()
         user=self.driver.find_element(By.XPATH,'//*[@id="root"]/div[1]/div[1]/div[10]/div/div[2]/div/div/div/div[2]/div/div/input')
-        user.send_keys('niyogv')
+        user.send_keys('')
         password=self.driver.find_element(By.XPATH,'//*[@id="root"]/div[1]/div[1]/div[10]/div/div[2]/div/div/div/div[3]/div/div/input')
-        password.send_keys('Test@123')
+        password.send_keys('')
         self.driver.find_element(By.XPATH,"//button[@class='MuiButtonBase-root MuiButton-root MuiButton-contained']").click()
         time.sleep(10)
         try: # The selenium checks whether the title of page is matching or not if not it throws an assertion error
@@ -82,8 +82,8 @@ class Test_dashboard_market:
 
     # This is a main function, where it login to moi-id
     def test_Moi_id(self,test_invoke2):
-        self.driver.find_element(By.XPATH,"//input[@name='username']").send_keys('niyog')
-        self.driver.find_element(By.XPATH,"//input[@name='password']").send_keys('Niyogjilla@12')
+        self.driver.find_element(By.XPATH,"//input[@name='username']").send_keys('')
+        self.driver.find_element(By.XPATH,"//input[@name='password']").send_keys('')
         self.driver.find_element(By.XPATH,"//button[@type='submit']").click()
         time.sleep(10)
         try: # The selenium checks whether the title of page is matching or not if not it throws an assertion error
@@ -97,8 +97,8 @@ class Test_dashboard_market:
 
     # This is a main function, where it login to montor.moibit.io and scrolls down to each ip name and  checks everything looks good
     def test_Monitor(self,test_invoke3):
-        self.driver.find_element(By.XPATH,"//input[@name='user']").send_keys('admin')
-        self.driver.find_element(By.XPATH,"//input[@name='password']").send_keys('moibit@123')
+        self.driver.find_element(By.XPATH,"//input[@name='user']").send_keys('')
+        self.driver.find_element(By.XPATH,"//input[@name='password']").send_keys('')
         self.driver.find_element(By.XPATH,"//button[@aria-label='Login button']").click()
         time.sleep(4)
         try: # The selenium checks whether the title of page is matching or not if not it throws an assertion error
